@@ -74,8 +74,16 @@
                             // Algoritmo para calcular la tabla del multiplicar de un número
 
 
-let ingresarNumero = parseInt(prompt("Ingresar Número"));
-for (let i = 1; i <=10; i++) {
-    let resultado = ingresarNumero * i ;
-    alert(ingresarNumero + "x"+ i +" = "+ resultado);
-}
+// let ingresarNumero = parseInt(prompt("Ingresar Número"));
+// for (let i = 1; i <=10; i++) {
+//     let resultado = ingresarNumero * i ;
+//     alert(ingresarNumero + "x"+ i +" = "+ resultado);
+// }
+
+
+                            // Algoritmo de Turnos
+
+// for (let i = 1; i <=5; i++) {
+//     let ingresarNombre = prompt("Ingresar Nombre");
+//     alert ("Turno N°" +i+"Nombre: "+ingresarNombre);
+// }
