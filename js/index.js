@@ -85,7 +85,12 @@
 
 // for (let i = 1; i <=5; i++) {
 //     let ingresarNombre = prompt("Ingresar Nombre");
-//     alert ("Turno N°" +i+"Nombre: "+ingresarNombre);
+//     if(ingresarNombre == ""){
+//         alert("Ingresa tu maldito nombre")
+//         let ingresarNombre = prompt("Ingresar Nombre")
+//     }else{
+//         alert("Turno N°" + i + " Nombre: " + ingresarNombre);
+//     }
 // }
 
                             // Algoritmo de Break
@@ -97,10 +102,18 @@
 //     alert(i);
 // }
 
+                            // Sentencia Continue
+// for (let i = 1; i <= 10; i++){
+//     if(i == 5){
+//         continue;
+//     }
+//     alert(i);
+// }
 
-for (let i = 1; i <= 10; i++){
-    if(i == 5){
-        continue;
-    }
-    alert(i);
-}
+
+                            // While: No recomendable usar
+
+// let repetir = true;
+// while(repetir){
+// console.log("Al infinito y...¡Más allá!");
+// }
