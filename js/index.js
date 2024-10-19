@@ -87,3 +87,20 @@
 //     let ingresarNombre = prompt("Ingresar Nombre");
 //     alert ("Turno N°" +i+"Nombre: "+ingresarNombre);
 // }
+
+                            // Algoritmo de Break
+
+// for (let i = 1; i <= 10; i++){
+//     if(i == 5){
+//         break;
+//     }
+//     alert(i);
+// }
+
+
+for (let i = 1; i <= 10; i++){
+    if(i == 5){
+        continue;
+    }
+    alert(i);
+}
