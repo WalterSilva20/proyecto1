@@ -132,9 +132,27 @@
 // do{
 //     console.log("¡Sólo una vez!");
 // }while(repetir)
+//                              Do...While: N°
+// let numero = 0;
+// do{
+//     numero = prompt("Ingresar Número");
+// console.log(numero);
+// }while(parseInt(numero));
 
-let numero = 0;
-do{
-    numero = prompt("Ingresar Número");
-console.log(numero);
-}while(parseInt(numero));
+
+//                              Práctica con While y Switch
+
+let entrada = prompt("Ingresar un nombre");
+
+while(entrada){
+    switch (entrada != NaN) {
+        case "":
+        alert("HOLA " + entrada);
+  
+    break;
+        default:
+        alert("¿Esto no es un Nombre?")
+    break;
+}
+    entrada = prompt("Ingresar un nombre");
+}
