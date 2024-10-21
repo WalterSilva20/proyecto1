@@ -1,4 +1,4 @@
-                                        //variables
+//                              Variables
 
 // let nombre = 'walter';
 // let apellido = 'silva';
@@ -9,7 +9,7 @@
 // console.log (edad);
 
 
-                                        //ecuaciones
+//                               Ecuaciones
                                         
 // let numeroA = 2;
 // let numeroB = 3;
@@ -25,7 +25,7 @@
 // console.log (resultadoProducto);
 
 
-                                        //condicionales
+//                                 Condicionales
 
 // let unNumero = 7;
 
@@ -59,19 +59,18 @@
 // }
 
 
-                            //Tipos de Bucles: Estructura For 
+//                               Tipos de Bucles: Estructura For 
 
 // for (let i = 0; i< 10; i++) {
 //     alert (i);
 // }
 
-                            // ahora cuenta de 1 a 10
+//                               ahora cuenta de 1 a 10
 
 // for (let i = 1; i<=10; i++){
 //     alert (i)
 // }
-
-                            // Algoritmo para calcular la tabla del multiplicar de un número
+//                               Algoritmo para calcular la tabla del multiplicar de un número
 
 
 // let ingresarNumero = parseInt(prompt("Ingresar Número"));
@@ -81,7 +80,7 @@
 // }
 
 
-                            // Algoritmo de Turnos
+//                               Algoritmo de Turnos
 
 // for (let i = 1; i <=5; i++) {
 //     let ingresarNombre = prompt("Ingresar Nombre");
@@ -93,7 +92,7 @@
 //     }
 // }
 
-                            // Algoritmo de Break
+//                              Algoritmo de Break
 
 // for (let i = 1; i <= 10; i++){
 //     if(i == 5){
@@ -102,7 +101,7 @@
 //     alert(i);
 // }
 
-                            // Sentencia Continue
+//                              Sentencia Continue
 // for (let i = 1; i <= 10; i++){
 //     if(i == 5){
 //         continue;
@@ -111,9 +110,31 @@
 // }
 
 
-                            // While: No recomendable usar
+ //                              While: No recomendable usar
 
 // let repetir = true;
 // while(repetir){
 // console.log("Al infinito y...¡Más allá!");
 // }
+
+
+//                              Ejemplo de While: Esc
+
+// let entrada = prompt("Ingresar un dato");
+// while(entrada != "ESC" ){
+//     alert("El usuario ingresó "+ entrada);
+//     entrada = prompt("Ingresar otro dato");
+// }
+
+//                              Do...While
+
+// let repetir = false;
+// do{
+//     console.log("¡Sólo una vez!");
+// }while(repetir)
+
+let numero = 0;
+do{
+    numero = prompt("Ingresar Número");
+console.log(numero);
+}while(parseInt(numero));
