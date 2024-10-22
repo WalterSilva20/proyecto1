@@ -142,45 +142,98 @@
 
 //                              Práctica con While y Switch
 
-let entrada = prompt("Ingresar un nombre");
+// let entrada = prompt("Ingresar un nombre");
 
-while(entrada != "ESC" ){
-switch (entrada) {
-    case "ANA":
-        alert("HOLA ANA");
-        break;
+// while(entrada != "ESC" ){
+// switch (entrada) {
+//     case "ANA":
+//         alert("HOLA ANA");
+//         break;
 
-    case "JUAN":
-        alert("HOLA JUAN");
-        break;
-    default:
-        alert("¿QUIÉN SOS?")
-        break;
-    }
-entrada = prompt("Ingresar un nombre");
-}
+//     case "JUAN":
+//         alert("HOLA JUAN");
+//         break;
+//     default:
+//         alert("¿QUIÉN SOS?")
+//         break;
+//     }
+// entrada = prompt("Ingresar un nombre");
+// }
 
 //                              Ejemplo Aplicado: Calculadora
 
-function calculadora(primerNumero, segundoNumero, operacion) {
-    switch (operacion) {
-    case "+":
-    return primerNumero + segundoNumero;
-    break;
-    case "-":
-    return primerNumero - segundoNumero;
-    break;
-    case "*":
-    return primerNumero * segundoNumero;
-    break;
-    case "/":
-    return primerNumero / segundoNumero;
-    break;
-    default:
-    return 0;
-    break;
-    }
-    }
-    console.log(calculadora(10, 5, "*"));
+// function calculadora(primerNumero, segundoNumero, operacion) {
+//     switch (operacion) {
+//     case "+":
+//     return primerNumero + segundoNumero;
+//     break;
+//     case "-":
+//     return primerNumero - segundoNumero;
+//     break;
+//     case "*":
+//     return primerNumero * segundoNumero;
+//     break;
+//     case "/":
+//     return primerNumero / segundoNumero;
+//     break;
+//     default:
+//     return 0;
+//     break;
+//     }
+//     }
+//     console.log(calculadora(10, 5, "*"));
 
     
+
+
+//                              7-8 Json
+//                              Ejemplo: Almacenar Array de Objetos
+
+// const productos = [{ id: 1, producto: "Arroz", precio: 125 },
+//                    { id: 2, producto: "Fideo", precio: 70 },
+//                    { id: 3, producto: "Pan" , precio: 50},
+//                    { id: 4, producto: "Flan" , precio: 100}];
+    
+//     const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+    
+//     //Almacenar producto por producto
+//     for (const producto of productos) {
+//     guardarLocal(producto.id, JSON.stringify(producto));
+//     }
+//     // o almacenar array completo
+//     guardarLocal("listaProductos", JSON.stringify(productos));
+
+
+const array = [
+    {id:1, producto: 'tabla', precio: 1000},
+    {id:2, producto: 'trucks', precio: 5000},
+    {id:3, producto: 'ruedas', precio: 3000}
+]
+
+class Producto{
+    constructor(objeto){
+        this.id = parseInt(objeto.id)
+        this.nombre = objeto.producto
+        this.precio = parseFloat(objeto.precio)
+    }
+
+    sumarIva(){
+        this.precio = this.precio * 1.21
+    }
+}
+
+localStorage.setItem('listaDeProductos', JSON.stringify(array))
+
+const arrayTraido = localStorage.getItem('listaDeProductos')
+
+const objArrayTraido = JSON.parse(arrayTraido)
+
+const arrayFinal = []
+
+for(const objet of objArrayTraido){
+    arrayFinal.push(new Producto(objet))
+}
+
+arrayFinal[1].sumarIva()
+
+console.log(arrayFinal)
