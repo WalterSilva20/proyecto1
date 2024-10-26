@@ -27,7 +27,7 @@ section::after{
     mix-blend-mode: screen;
 } */
 
-video , h1 {
+/* video , h1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,4 +48,6 @@ h1 {
     text-align: center;
     background: white;
     mix-blend-mode: screen;
-}
+} */
+
+
